@@ -1,0 +1,44 @@
+{
+  "project": "Oncology Tumor Diagnostic Classifier (Deep Learning Project 1)",
+  "dataset": "Wisconsin Diagnostic Breast Cancer (WDBC, N=569, d=30)",
+  "validation_protocol": "5-Fold Stratified Cross-Validation",
+  "class_distribution": {
+    "malignant_0": 212,
+    "benign_1": 357
+  },
+  "results": [
+    {
+      "model": "L2 Logistic Regression Baseline",
+      "roc_auc": 0.995,
+      "roc_auc_std": 0.0051,
+      "accuracy": 0.9754,
+      "precision": 0.9673,
+      "sensitivity": 0.9944,
+      "specificity": 0.9434,
+      "f1": 0.9807,
+      "brier_score": 0.0202
+    },
+    {
+      "model": "Shallow MLP (Notebook 20-Unit)",
+      "roc_auc": 0.995,
+      "roc_auc_std": 0.0062,
+      "accuracy": 0.9754,
+      "precision": 0.9751,
+      "sensitivity": 0.986,
+      "specificity": 0.9575,
+      "f1": 0.9805,
+      "brier_score": 0.0198
+    },
+    {
+      "model": "Deep MLP (64-32 ReLU + L2)",
+      "roc_auc": 0.994,
+      "roc_auc_std": 0.008,
+      "accuracy": 0.9736,
+      "precision": 0.9698,
+      "sensitivity": 0.9888,
+      "specificity": 0.9481,
+      "f1": 0.9792,
+      "brier_score": 0.0232
+    }
+  ]
+}
